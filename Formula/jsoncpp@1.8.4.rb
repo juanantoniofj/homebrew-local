@@ -16,8 +16,6 @@ class JsoncppAT184 < Formula
   depends_on "cmake" => :build
 
   def install
-    ENV.cxx11
-
     system "cmake", ".", *std_cmake_args,
                          "-DBUILD_STATIC_LIBS=ON",
                          "-DBUILD_SHARED_LIBS=ON",
